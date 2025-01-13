@@ -20,18 +20,20 @@ body {
 .header {
   padding: 20px;
   background: rgba(0, 0, 0, 0.7);
-  width: 50%;
+  width: 70%;
   box-sizing: border-box;
+  border-radius:10px;
 }
 
 .menu {
   margin: 20px auto;
-  max-width: 50%;
+  max-width: 60%;
   padding-bottom: 30px;
   width: 100%;
   box-sizing: border-box;
   color:white;
   background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
 }
 
 .buttons,
