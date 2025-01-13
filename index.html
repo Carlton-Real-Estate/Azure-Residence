@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Welcome to Azure Residence</h1>
+        <p>Your perfect getaway destination</p>
+    </header>
+
+    <!-- Main Features Menu -->
+    <section id="main-features" class="menu">
+        <h2>Main Features</h2>
+        <div class="buttons">
+            <button onclick="showReception()">Reception</button>
+            <button onclick="showFacilities()">Facilities</button>
+            <button onclick="showFloors()">Apartments</button>
+        </div>
+    </section>
+    <!-- Floor Selector -->
+    <section id="floor-selector" class="menu" style="display: none;">
+        <h2>Select a Floor</h2>
+        <div class="floor-buttons">
+            <button onclick="openFloor(3)">Floor 3</button>
+            <button onclick="openFloor(4)">Floor 4</button>
+            <button onclick="openFloor(5)">Floor 5</button>
+            <button onclick="openFloor(6)">Floor 6</button>
+            <button onclick="openFloor(7)">Floor 7</button>
+            <button onclick="openFloor(8)">Floor 8</button>
+            <button onclick="openFloor(9)">Floor 9</button>
+            <button onclick="openFloor(10)">Floor 10</button>
+            <button onclick="openFloor(11)">Floor 11</button>
+            <button onclick="openFloor(12)">Floor 12</button>
+            <button onclick="openFloor(13)">Floor 13</button>
+            <button onclick="openFloor(14)">Floor 14</button>
+            <button onclick="openFloor(15)">Floor 15</button>
+            <button onclick="openFloor(16)">Floor 16</button>
+            <button onclick="openFloor(17)">Floor 17</button>
+            <button onclick="openFloor(18)">Floor 18</button>
+        </div>
+        <button class="back-button" onclick="goBack()">Back to Main Features</button>
+    </section>
+
+    <!-- Flats Selector -->
+    <section id="flat-selector" class="menu" style="display: none;">
+        <h2>Floor <span id="floor-number">1</span> - Select an Apartment</h2>
+        <div id="flat-buttons" class="flat-buttons">
+            <!-- Flat buttons will be dynamically generated -->
+        </div>
+        <button class="back-button" onclick="goBackToFloors()">Back to Floors</button>
+    </section>
+</body>
+
+</html>
