@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -68,4 +69,37 @@ button:hover {
 
 h2 {
   margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  html{
+    overflow: scroll;
+  }
+
+  body{
+    background-position: center;
+    background-image: url('Assets/0_AZURE RESIDENCE.jpg');
+    background-attachment: fixed;
+    background-size: no-repeat center center/cover;
+  }
+  .menu {
+    max-width: 70%;
+    height: 70%;
+    margin-bottom: 10%;
+    overflow: scroll;
+  } 
+  .header {
+    margin-top: 10%;
+    width: 70%;
+    height: 10%;
+  }
+  .flat-buttons {
+    flex-direction: column;
+  }
+  button {
+    width: 100%;
+  }
+  .back-button{
+    width: 70%;
+  }
 }
